@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed - Your Dream Event Awaits | DreamEvents</title>
+    <meta name="description" content="Congratulations! Your event booking is confirmed. View your personalized timeline, next steps, and start planning your perfect celebration with DreamEvents.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdreamevent4574back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.10"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-gray-200">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 20L18 26L28 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="20" cy="20" r="6" fill="currentColor" opacity="0.2"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-headline font-bold text-primary">DreamEvents</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="event_type_selection.html" class="text-text-secondary hover:text-primary transition-colors">Events</a>
+                    <a href="venue_discovery.html" class="text-text-secondary hover:text-primary transition-colors">Venues</a>
+                    <a href="package_visualization.html" class="text-text-secondary hover:text-primary transition-colors">Packages</a>
+                    <a href="customization_studio.html" class="text-text-secondary hover:text-primary transition-colors">Customize</a>
+                </div>
+
+                <!-- User Account -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="p-2 text-text-secondary hover:text-primary transition-colors relative">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                        </svg>
+                        <span class="absolute top-1 right-1 w-2 h-2 bg-accent rounded-full"></span>
+                    </button>
+                    <div class="flex items-center space-x-2">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1c1401c11-1764670657600.png" 
+                             alt="User profile avatar" 
+                             class="w-8 h-8 rounded-full object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150'; this.onerror=null;">
+                        <span class="text-sm font-medium text-text-primary">Priya S.</span>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 text-text-secondary hover:text-primary" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-background border-t border-gray-200">
+                    <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                    <a href="event_type_selection.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Events</a>
+                    <a href="venue_discovery.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Venues</a>
+                    <a href="package_visualization.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Packages</a>
+                    <a href="customization_studio.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Customize</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Success Celebration Animation -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-accent-50 to-secondary-50"></div>
+            <!-- Floating Confetti Elements -->
+            <div class="absolute top-20 left-10 w-3 h-3 bg-accent rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
+            <div class="absolute top-40 right-20 w-2 h-2 bg-secondary rounded-full animate-bounce" style="animation-delay: 0.3s;"></div>
+            <div class="absolute bottom-40 left-1/4 w-4 h-4 bg-primary rounded-full animate-bounce" style="animation-delay: 0.5s;"></div>
+            <div class="absolute top-1/3 right-1/3 w-3 h-3 bg-accent-300 rounded-full animate-bounce" style="animation-delay: 0.7s;"></div>
+        </div>
+
+        <!-- Confirmation Content -->
+        <div class="relative z-10 container-custom text-center py-12">
+            <div class="max-w-4xl mx-auto">
+                <!-- Success Icon -->
+                <div class="mb-8 animate-scale-in">
+                    <div class="inline-flex items-center justify-center w-24 h-24 bg-success rounded-full shadow-xl">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Confirmation Message -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-headline font-bold text-primary mb-4 animate-fade-in">
+                    🎉 Congratulations, Priya!
+                </h1>
+                <p class="text-xl md:text-2xl text-text-secondary mb-8 animate-slide-up">
+                    Your dream wedding celebration is officially confirmed. We're thrilled to be part of your special journey!
+                </p>
+
+                <!-- Booking Reference -->
+                <div class="inline-flex items-center bg-background rounded-xl shadow-lg px-6 py-4 mb-8 animate-scale-in">
+                    <svg class="w-6 h-6 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    <div class="text-left">
+                        <p class="text-sm text-text-secondary">Booking Reference</p>
+                        <p class="text-lg font-semibold text-primary">DE-WED-2025-1847</p>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <button class="btn btn-primary text-lg px-8 py-4" onclick="window.print()">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+                        </svg>
+                        Download Confirmation
+                    </button>
+                    <button class="btn btn-accent text-lg px-8 py-4" id="share-btn">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+                        </svg>
+                        Share the News
+                    </button>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="flex flex-wrap justify-center items-center gap-6 text-sm text-text-secondary">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        Secure Payment
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        Verified Booking
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                        </svg>
+                        Confirmation Sent
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Summary Section -->
+    <section class="section bg-background">
+        <div class="container-custom">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-8 text-center">
+                    Your Booking Summary
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Event Details Card -->
+                    <div class="lg:col-span-2">
+                        <div class="card p-8">
+                            <div class="flex items-start justify-between mb-6">
+                                <div>
+                                    <h3 class="text-2xl font-headline font-semibold text-primary mb-2">
+                                        Dream Garden Wedding
+                                    </h3>
+                                    <p class="text-text-secondary">Premium Package - Gold Tier</p>
+                                </div>
+                                <span class="badge badge-success">Confirmed</span>
+                            </div>
+
+                            <div class="space-y-4">
+                                <!-- Venue -->
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold text-text-primary">The Royal Gardens</p>
+                                        <p class="text-sm text-text-secondary">Juhu, Mumbai - 400049</p>
+                                    </div>
+                                </div>
+
+                                <!-- Date & Time -->
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold text-text-primary">Saturday, March 15, 2025</p>
+                                        <p class="text-sm text-text-secondary">6:00 PM - 11:00 PM (5 hours)</p>
+                                    </div>
+                                </div>
+
+                                <!-- Guest Count -->
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 text-primary mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                    <div>
+                                        <p class="font-semibold text-text-primary">250 Guests</p>
+                                        <p class="text-sm text-text-secondary">Seated dinner arrangement</p>
+                                    </div>
+                                </div>
+
+                                <!-- Package Inclusions -->
+                                <div class="mt-6 pt-6 border-t border-gray-200">
+                                    <p class="font-semibold text-text-primary mb-3">Package Includes:</p>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                        <div class="flex items-center text-sm text-text-secondary">
+                                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Premium Floral Decor
+                                        </div>
+                                        <div class="flex items-center text-sm text-text-secondary">
+                                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Professional Photography
+                                        </div>
+                                        <div class="flex items-center text-sm text-text-secondary">
+                                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Gourmet Catering
+                                        </div>
+                                        <div class="flex items-center text-sm text-text-secondary">
+                                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Live Music Band
+                                        </div>
+                                        <div class="flex items-center text-sm text-text-secondary">
+                                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Lighting & Sound
+                                        </div>
+                                        <div class="flex items-center text-sm text-text-secondary">
+                                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                            </svg>
+                                            Event Coordinator
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Summary Card -->
+                    <div class="lg:col-span-1">
+                        <div class="card p-6 sticky top-20">
+                            <h3 class="text-xl font-headline font-semibold text-primary mb-4">
+                                Payment Summary
+                            </h3>
+
+                            <div class="space-y-3 mb-4">
+                                <div class="flex justify-between text-text-secondary">
+                                    <span>Package Cost</span>
+                                    <span>₹4,50,000</span>
+                                </div>
+                                <div class="flex justify-between text-text-secondary">
+                                    <span>Customizations</span>
+                                    <span>₹75,000</span>
+                                </div>
+                                <div class="flex justify-between text-text-secondary">
+                                    <span>Service Tax (18%)</span>
+                                    <span>₹94,500</span>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="flex justify-between text-lg font-semibold text-primary">
+                                    <span>Total Amount</span>
+                                    <span>₹6,19,500</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-success-50 rounded-lg p-4 mb-4">
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-success mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <div>
+                                        <p class="text-sm font-semibold text-success-700">Advance Paid</p>
+                                        <p class="text-sm text-success-600">₹1,85,850 (30%)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-warning-50 rounded-lg p-4 mb-4">
+                                <div class="flex items-start">
+                                    <svg class="w-5 h-5 text-warning mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <div>
+                                        <p class="text-sm font-semibold text-warning-700">Balance Due</p>
+                                        <p class="text-sm text-warning-600">₹4,33,650</p>
+                                        <p class="text-xs text-warning-600 mt-1">Due by March 1, 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-outline w-full">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                                View Invoice
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Visualization Section -->
+    <section class="section bg-surface">
+        <div class="container-custom">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-4">
+                        Your Planning Timeline
+                    </h2>
+                    <p class="text-xl text-text-secondary">
+                        Stay on track with our comprehensive milestone roadmap
+                    </p>
+                </div>
+
+                <!-- Timeline -->
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-primary-200 hidden md:block"></div>
+
+                    <!-- Timeline Items -->
+                    <div class="space-y-8">
+                        <!-- Milestone 1 - Completed -->
+                        <div class="relative flex items-start">
+                            <div class="flex-shrink-0 w-16 h-16 bg-success rounded-full flex items-center justify-center shadow-lg z-10">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="ml-6 flex-1">
+                                <div class="card p-6">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <h3 class="text-xl font-semibold text-primary">Booking Confirmed</h3>
+                                        <span class="badge badge-success">Completed</span>
+                                    </div>
+                                    <p class="text-text-secondary mb-2">December 6, 2025</p>
+                                    <p class="text-sm text-text-secondary">Your booking is confirmed and advance payment has been received. Welcome to the DreamEvents family!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Milestone 2 - Current -->
+                        <div class="relative flex items-start">
+                            <div class="flex-shrink-0 w-16 h-16 bg-accent rounded-full flex items-center justify-center shadow-lg z-10 animate-pulse">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div class="ml-6 flex-1">
+                                <div class="card p-6 border-2 border-accent">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <h3 class="text-xl font-semibold text-primary">Initial Consultation</h3>
+                                        <span class="badge badge-warning">In Progress</span>
+                                    </div>
+                                    <p class="text-text-secondary mb-2">December 10, 2025 - 3:00 PM</p>
+                                    <p class="text-sm text-text-secondary mb-4">Meet your dedicated event coordinator to discuss your vision, preferences, and finalize details.</p>
+                                    <button class="btn btn-accent">
+                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                        </svg>
+                                        Add to Calendar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Milestone 3 - Upcoming -->
+                        <div class="relative flex items-start">
+                            <div class="flex-shrink-0 w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center shadow-lg z-10">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                                </svg>
+                            </div>
+                            <div class="ml-6 flex-1">
+                                <div class="card p-6 opacity-75">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <h3 class="text-xl font-semibold text-primary">Design Finalization</h3>
+                                        <span class="badge badge-primary">Upcoming</span>
+                                    </div>
+                                    <p class="text-text-secondary mb-2">December 20, 2025</p>
+                                    <p class="text-sm text-text-secondary">Review and approve final design mockups, color schemes, and decor arrangements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Milestone 4 - Upcoming -->
+                        <div class="relative flex items-start">
+                            <div class="flex-shrink-0 w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center shadow-lg z-10">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                                </svg>
+                            </div>
+                            <div class="ml-6 flex-1">
+                                <div class="card p-6 opacity-75">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <h3 class="text-xl font-semibold text-primary">Menu Tasting</h3>
+                                        <span class="badge badge-primary">Upcoming</span>
+                                    </div>
+                                    <p class="text-text-secondary mb-2">January 15, 2025</p>
+                                    <p class="text-sm text-text-secondary">Sample and select your preferred menu items with our culinary team.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Milestone 5 - Upcoming -->
+                        <div class="relative flex items-start">
+                            <div class="flex-shrink-0 w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center shadow-lg z-10">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div class="ml-6 flex-1">
+                                <div class="card p-6 opacity-75">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <h3 class="text-xl font-semibold text-primary">Final Payment</h3>
+                                        <span class="badge badge-primary">Upcoming</span>
+                                    </div>
+                                    <p class="text-text-secondary mb-2">March 1, 2025</p>
+                                    <p class="text-sm text-text-secondary">Complete the remaining balance payment to finalize all arrangements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Milestone 6 - Final -->
+                        <div class="relative flex items-start">
+                            <div class="flex-shrink-0 w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center shadow-lg z-10">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                                </svg>
+                            </div>
+                            <div class="ml-6 flex-1">
+                                <div class="card p-6 opacity-75 bg-gradient-to-r from-primary-50 to-accent-50">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <h3 class="text-xl font-semibold text-primary">Your Dream Event Day!</h3>
+                                        <span class="badge badge-primary">March 15, 2025</span>
+                                    </div>
+                                    <p class="text-text-secondary mb-2">6:00 PM - 11:00 PM</p>
+                                    <p class="text-sm text-text-secondary">The moment you've been waiting for - your perfect celebration comes to life!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps Checklist Section -->
+    <section class="section bg-background">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-4">
+                        Your Next Steps
+                    </h2>
+                    <p class="text-xl text-text-secondary">
+                        Complete these actions to ensure a smooth planning experience
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Checklist Item 1 -->
+                    <div class="card p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-6 h-6 rounded-full border-2 border-success bg-success flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-primary mb-1">Check Your Email</h3>
+                                        <p class="text-sm text-text-secondary">Confirmation email with booking details has been sent to priya.sharma@email.com</p>
+                                    </div>
+                                    <span class="badge badge-success ml-4">Done</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checklist Item 2 -->
+                    <div class="card p-6 hover:shadow-lg transition-shadow border-2 border-accent">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-6 h-6 rounded-full border-2 border-accent bg-white flex items-center justify-center">
+                                    <div class="w-3 h-3 rounded-full bg-accent"></div>
+                                </div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-primary mb-1">Schedule Your Consultation</h3>
+                                        <p class="text-sm text-text-secondary mb-3">Book your initial meeting with your event coordinator</p>
+                                        <button class="btn btn-accent btn-sm">
+                                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                            </svg>
+                                            Schedule Now
+                                        </button>
+                                    </div>
+                                    <span class="badge badge-warning ml-4">Action Required</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checklist Item 3 -->
+                    <div class="card p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-6 h-6 rounded-full border-2 border-primary bg-white"></div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-primary mb-1">Complete Your Profile</h3>
+                                        <p class="text-sm text-text-secondary mb-3">Add guest preferences and dietary requirements</p>
+                                        <button class="btn btn-outline btn-sm">
+                                            Update Profile
+                                        </button>
+                                    </div>
+                                    <span class="badge badge-primary ml-4">Optional</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checklist Item 4 -->
+                    <div class="card p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-6 h-6 rounded-full border-2 border-primary bg-white"></div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-primary mb-1">Join Our Community</h3>
+                                        <p class="text-sm text-text-secondary mb-3">Connect with other couples and share planning tips</p>
+                                        <button class="btn btn-outline btn-sm">
+                                            Join Community
+                                        </button>
+                                    </div>
+                                    <span class="badge badge-primary ml-4">Optional</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checklist Item 5 -->
+                    <div class="card p-6 hover:shadow-lg transition-shadow">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-6 h-6 rounded-full border-2 border-primary bg-white"></div>
+                            </div>
+                            <div class="ml-4 flex-1">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-primary mb-1">Download Planning Guide</h3>
+                                        <p class="text-sm text-text-secondary mb-3">Get our comprehensive wedding planning checklist</p>
+                                        <button class="btn btn-outline btn-sm">
+                                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                            </svg>
+                                            Download PDF
+                                        </button>
+                                    </div>
+                                    <span class="badge badge-primary ml-4">Recommended</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support & Resources Section -->
+    <section class="section bg-surface">
+        <div class="container-custom">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-4">
+                        We're Here to Help
+                    </h2>
+                    <p class="text-xl text-text-secondary">
+                        Access support, resources, and your dedicated planning team
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Your Event Coordinator -->
+                    <div class="card p-6 text-center">
+                        <div class="mb-4">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_188a24748-1763299988931.png" 
+                                 alt="Portrait of Anjali Mehta, your dedicated event coordinator" 
+                                 class="w-24 h-24 rounded-full object-cover mx-auto shadow-lg"
+                                 onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616c9c1e3c0?q=80&w=300&auto=format&fit=crop'; this.onerror=null;">
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-2">Anjali Mehta</h3>
+                        <p class="text-sm text-text-secondary mb-4">Your Event Coordinator</p>
+                        <div class="space-y-2">
+                            <button class="btn btn-primary w-full">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                                Call Now
+                            </button>
+                            <button class="btn btn-outline w-full">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                                Chat
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Help Center -->
+                    <div class="card p-6">
+                        <div class="flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mx-auto mb-4">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-2 text-center">Help Center</h3>
+                        <p class="text-sm text-text-secondary mb-4 text-center">Find answers to common questions</p>
+                        <ul class="space-y-2 mb-4">
+                            <li>
+                                <a href="javascript:void(0)" class="text-sm text-primary hover:underline flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                    Payment & Refund Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="text-sm text-primary hover:underline flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                    Customization Options
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="text-sm text-primary hover:underline flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                    Venue Guidelines
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline w-full">View All FAQs</button>
+                    </div>
+
+                    <!-- Planning Resources -->
+                    <div class="card p-6">
+                        <div class="flex items-center justify-center w-16 h-16 bg-accent-100 rounded-full mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-2 text-center">Planning Resources</h3>
+                        <p class="text-sm text-text-secondary mb-4 text-center">Tools and guides for your journey</p>
+                        <ul class="space-y-2 mb-4">
+                            <li>
+                                <a href="javascript:void(0)" class="text-sm text-primary hover:underline flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                    Budget Calculator
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="text-sm text-primary hover:underline flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                    Guest List Manager
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="text-sm text-primary hover:underline flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                    Vendor Directory
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline w-full">Explore Resources</button>
+                    </div>
+                </div>
+
+                <!-- Emergency Contact -->
+                <div class="mt-8 bg-error-50 rounded-xl p-6 border-l-4 border-error">
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-error mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                        <div>
+                            <h4 class="text-lg font-semibold text-error-700 mb-2">24/7 Emergency Support</h4>
+                            <p class="text-sm text-error-600 mb-3">For urgent matters or last-minute changes, our emergency team is always available.</p>
+                            <a href="tel:+919876543210" class="text-error-700 font-semibold hover:underline">
+                                📞 +91 98765 43210
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Sharing & Referral Section -->
+    <section class="section bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container-custom text-center">
+            <h2 class="text-3xl md:text-4xl font-headline font-bold mb-6">
+                Share Your Excitement!
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Tell your friends and family about your upcoming celebration. Plus, earn rewards through our referral program!
+            </p>
+
+            <!-- Social Share Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="btn bg-white text-primary hover:bg-gray-100">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                    Share on Twitter
+                </button>
+                <button class="btn bg-white text-primary hover:bg-gray-100">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                    </svg>
+                    Share on Facebook
+                </button>
+                <button class="btn bg-white text-primary hover:bg-gray-100">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    Share on Instagram
+                </button>
+                <button class="btn bg-white text-primary hover:bg-gray-100">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+                    </svg>
+                    Copy Link
+                </button>
+            </div>
+
+            <!-- Referral Program -->
+            <div class="max-w-3xl mx-auto bg-white/10 backdrop-blur-md rounded-xl p-8">
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="w-12 h-12 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-headline font-bold mb-3">Refer Friends & Earn Rewards</h3>
+                <p class="mb-6 opacity-90">
+                    Share your unique referral code and earn ₹10,000 credit for every friend who books with us!
+                </p>
+                <div class="bg-white rounded-lg p-4 mb-4">
+                    <div class="flex items-center justify-between">
+                        <div class="text-left">
+                            <p class="text-sm text-text-secondary">Your Referral Code</p>
+                            <p class="text-2xl font-bold text-primary">PRIYA2025</p>
+                        </div>
+                        <button class="btn btn-primary">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                            Copy Code
+                        </button>
+                    </div>
+                </div>
+                <p class="text-sm opacity-75">
+                    Terms & Conditions Apply | Valid for new customers only
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white">
+        <div class="container-custom py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 20L18 26L28 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="20" cy="20" r="6" fill="currentColor" opacity="0.2"/>
+                        </svg>
+                        <span class="ml-3 text-xl font-headline font-bold">DreamEvents</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Transforming life's most precious moments into unforgettable experiences. Where imagination meets execution, and dreams become reality.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="event_type_selection.html" class="text-gray-300 hover:text-accent transition-colors">Event Types</a></li>
+                        <li><a href="venue_discovery.html" class="text-gray-300 hover:text-accent transition-colors">Venues</a></li>
+                        <li><a href="package_visualization.html" class="text-gray-300 hover:text-accent transition-colors">Packages</a></li>
+                        <li><a href="customization_studio.html" class="text-gray-300 hover:text-accent transition-colors">Customize</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +91 98765 43210
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            hello@dreamevents.in
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Mumbai, Delhi, Bangalore & 15+ Cities
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-800 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 DreamEvents. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Share Button Functionality
+        document.getElementById('share-btn').addEventListener('click', function() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'My Dream Wedding with DreamEvents',
+                    text: 'I just booked my dream wedding! Check out DreamEvents for your special celebration.',
+                    url: window.location.href
+                }).catch(err => console.log('Error sharing:', err));
+            } else {
+                // Fallback for browsers that don't support Web Share API
+                alert('Share this page: ' + window.location.href);
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add to Calendar functionality
+        document.querySelectorAll('.btn-accent').forEach(btn => {
+            if (btn.textContent.includes('Add to Calendar')) {
+                btn.addEventListener('click', function() {
+                    const event = {
+                        title: 'Initial Consultation - DreamEvents',
+                        description: 'Meet your dedicated event coordinator to discuss your vision',
+                        start: '2025-12-10T15:00:00',
+                        end: '2025-12-10T16:00:00',
+                        location: 'DreamEvents Office, Mumbai'
+                    };
+                    
+                    // Create Google Calendar URL
+                    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.start.replace(/[-:]/g, '')}/${event.end.replace(/[-:]/g, '')}&details=${encodeURIComponent(event.description)}&location=${encodeURIComponent(event.location)}`;
+                    
+                    window.open(googleCalendarUrl, '_blank');
+                });
+            }
+        });
+
+        // Print functionality
+        window.addEventListener('beforeprint', function() {
+            document.body.classList.add('printing');
+        });
+
+        window.addEventListener('afterprint', function() {
+            document.body.classList.remove('printing');
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
