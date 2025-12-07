@@ -15,7 +15,7 @@ et
 - Node.js (v12.x or higher)
 - npm or yarn
 
-## 🛠️ Installation
+## Installation
 
 1. Install dependencies:
 ```bash
@@ -31,7 +31,7 @@ npm run dev
 yarn dev
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 html_app/
